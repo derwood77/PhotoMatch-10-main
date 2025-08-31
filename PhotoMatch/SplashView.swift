@@ -33,15 +33,17 @@ struct SplashView: View {
             
             ZStack {
                 Color.green
-                
-                Image("twocamerasmod")
-                
-                    .resizable()
-                    .scaledToFit()
-                    .cornerRadius(20)
-                    .frame(width: 300, height: 300)
-                
-                Text("PhotoMatch")
+                VStack (spacing: 30) {
+                    Image("twocameras")
+                    
+                        .resizable()
+                        .scaledToFit()
+                        .cornerRadius(20)
+                        .frame(width: 300, height: 300)
+                    
+                    Text("PhotoMatch")
+                        .font(.largeTitle)
+                }
                 
             }
             .ignoresSafeArea(edges: .all)
