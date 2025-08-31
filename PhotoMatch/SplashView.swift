@@ -27,7 +27,7 @@ struct SplashView: View {
     
     var body: some View {
         if timerDidFinish {
-            Text("Second View")
+            
             StartView()
         } else {
             
