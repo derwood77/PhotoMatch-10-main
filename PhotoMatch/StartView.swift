@@ -59,7 +59,7 @@ struct StartView: View {
                         
                         Text("Set player name")
                         
-//                        Image(systemName: "gear").foregroundStyle(.black)
+                      Image(systemName: "arrowshape.up.circle.fill").foregroundStyle(.black)
 //                        
 //                        Text(" above")
 //                        
