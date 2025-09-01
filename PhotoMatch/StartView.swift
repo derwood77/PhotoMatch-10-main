@@ -184,6 +184,7 @@ struct StartView: View {
                         
                     } label: {
                         Image(systemName: "arrow.counterclockwise.circle.fill").foregroundStyle(.black)
+                        
                     }
                 }
                
@@ -195,7 +196,7 @@ struct StartView: View {
                         showingPlayerNameView = true   // Bring up set / change playerName (player)
                         
                     } label: {
-                        Image(systemName: "gear").foregroundStyle(.black)
+                        Image(systemName: "person.fill").foregroundStyle(.black)
                     }
                 }
                 

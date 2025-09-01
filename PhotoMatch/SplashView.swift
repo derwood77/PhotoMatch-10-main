@@ -35,7 +35,6 @@ struct SplashView: View {
                 Color.green
                 VStack (spacing: 30) {
                     Image("twocameras")
-                    
                         .resizable()
                         .scaledToFit()
                         .cornerRadius(20)
