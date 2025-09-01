@@ -57,12 +57,12 @@ struct StartView: View {
                 if playerName == "" {  // Prompt player to set up player name (playerName)
                     HStack {
                         
-                        Text("Set player name in settings ")
+                        Text("Set player name")
                         
-                        Image(systemName: "gear").foregroundStyle(.black)
-                        
-                        Text(" above")
-                        
+//                        Image(systemName: "gear").foregroundStyle(.black)
+//                        
+//                        Text(" above")
+//                        
                     }
                     .font(.system(size: 20, weight: .regular, design: .default))
                     .foregroundColor(.red)
