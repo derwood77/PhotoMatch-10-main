@@ -24,6 +24,7 @@ struct SecondView: View {
 
 struct SplashView: View {
     @State private var timerDidFinish = false
+    @State private var animationAmount = 1.0
     
     var body: some View {
         if timerDidFinish {
@@ -38,7 +39,9 @@ struct SplashView: View {
                         .resizable()
                         .scaledToFit()
                         .cornerRadius(20)
-                        .frame(width: 300, height: 300)
+                        .frame(width: 200, height: 200)
+                        .scaleEffect(animationAmount)
+                        .animation(.easeInOut(duration: 1),value: animationAmount)
                     
                     Text("PhotoMatch")
                         .font(.largeTitle)
@@ -49,6 +52,12 @@ struct SplashView: View {
             
             
             .onAppear { // ✅ .onAppear is applied directly to the First View
+                
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    animationAmount = 1.5
+                }
+                
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                     self.timerDidFinish = true
                 }
